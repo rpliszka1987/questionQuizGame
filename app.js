@@ -37,6 +37,16 @@ if (questionFive.toUpperCase() === 'UNITED STATES') {
     playerScore++;
 }
 
+/* User score code
+    Gold - 4 to 5 questions right
+    Silver - 2 to 3 questions right
+    Bronze - Less than 2 right
+*/
 
-
-document.write('<p>Your score is ' + playerScore);
+if (playerScore >= 4) {
+    document.write('<p>Gold Medal! ' + playerScore);
+} else if (playerScore >= 2 && playerScore < 4) {
+    document.write('<p>Silver Medal!! ' + playerScore)
+} else {
+    document.write('<p>Bronze Medal ' + playerScore)
+}
